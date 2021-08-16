@@ -7,11 +7,23 @@
     overflow: hidden;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    display: flex;
 }
 
 .cads{
-    display: flex;
+     display: flex;
     margin-left:430px;
     margin-top: 200px;
+    position: fixed;
     
+}
+.info-part{
+    position: fixed;
+    max-height: 400px;
+    margin-top:200px;
+    margin-left: 40px;
+     color:black;
+    width:300px;
+    font-weight: bold;
+    background-color:tomato;
 }

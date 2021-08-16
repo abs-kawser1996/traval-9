@@ -10,10 +10,11 @@ import {
 } from "react-router-dom";
 import React, { createContext } from "react";
 import { useState } from "react";
+import Header from './Components/Header/Header'
+import Booking from "./Components/Booking/Booking";
 
 
-
-export const MyContext =React.createContext();
+export const MyContext =createContext();
 
 
 
@@ -23,13 +24,20 @@ function App() {
   
   return (
  <MyContext.Provider value={[info,setInfo]}> 
+
     <Router> 
+      <Header></Header>
       <Switch>
 
-        <Route> 
-        <Home path="/home"></Home>
+        <Route exact path="/"> 
+        <Home></Home>
         </Route>
         
+        <Route exact path="/booking">
+           <Booking>
+            </Booking> 
+            
+        </Route>
         
       </Switch>
     </Router>
