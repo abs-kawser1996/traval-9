@@ -5,7 +5,7 @@ import Cards from "../Card/Cards";
 import "./Home.css"
 import places from '../../FakeData/Place'
 import {MyContext} from '../../App'
-
+ 
 const Home = () => {
   const [info,setInfo]=useContext(MyContext);
   console.log(info);
@@ -24,7 +24,8 @@ const Home = () => {
           { 
             Object.keys(info).length?
             <div className="info-part">
-                <p>{info.name}</p>
+                <h1>{info.name}</h1>
+                <hr/>
                 <p>{info.description}</p>
             
             </div> :'' 

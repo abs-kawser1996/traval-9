@@ -1,0 +1,10 @@
+.app__bg1{
+    background-image:linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)) , url(./Components/P-Image/Rectangle\ 1.png);
+    background-size: cover;
+    background-position: center;
+    height:100vh;
+    width: 100wh;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}

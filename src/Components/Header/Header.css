@@ -1,3 +1,9 @@
 .clor a{
    color: tomato !important;
 }
+.tranparent{
+   
+}
+.background{
+   background-image:rgba(255,255,255, 0.5 ) !important;
+}

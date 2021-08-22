@@ -8,7 +8,7 @@ import CardMedia from '@material-ui/core/CardMedia';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 import { MyContext } from '../../App';
-import { Link } from 'react-router-dom';
+import { Link, useHistory } from 'react-router-dom';
 
 
 
@@ -30,15 +30,20 @@ const Cards = (props) => {
   let { image, title, description } = props.place;
   // console.log(image,title,description);
   // console.log(place);
-
+  
 
 
   
   //showing place information
   function handleClick(PlaceInformation) {
     setInfo(PlaceInformation)
+    // history.push("/login");
 
   }
+
+
+ 
+
 
 
   // 
@@ -83,6 +88,7 @@ return (
       </Button>
 
       <Link to="/booking">
+          
         <Button onClick={() => handleClick(props.place)} size="small" color="primary">
           booking
         </Button>

@@ -12,6 +12,7 @@ import React, { createContext } from "react";
 import { useState } from "react";
 import Header from './Components/Header/Header'
 import Booking from "./Components/Booking/Booking";
+import Login from "./Components/Login/Login";
 
 
 export const MyContext =createContext();
@@ -22,26 +23,44 @@ function App() {
   const[info,setInfo]=useState({}); 
 
   
-  return (
+  return ( 
+<div className="MainContainer"> 
  <MyContext.Provider value={[info,setInfo]}> 
 
     <Router> 
-      <Header></Header>
       <Switch>
+                     
+                      
+                        <Route exact path="/">
+                        <Header></Header>
+                        
+                        <div className="app__bg1"> 
+                        <Home></Home>
+                        </div>
+                        </Route>
+        
 
-        <Route exact path="/"> 
-        <Home></Home>
-        </Route>
-        
-        <Route exact path="/booking">
-           <Booking>
-            </Booking> 
-            
-        </Route>
-        
+                                  <Route exact path="/booking">
+                                  <Header></Header>
+                                  <div className="app__bg1">
+                                      <Booking>
+                                       </Booking>
+                                       </div> 
+                                        </Route>
+                                        
+
+                                                              <Route exact path="/login">
+                                                                <Login></Login>
+                                                               </Route>
       </Switch>
     </Router>
+
+    
+    {/* <Booking>
+            </Booking>  */}
+            
     </MyContext.Provider>
+    </div>
   );
 }
 
