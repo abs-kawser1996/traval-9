@@ -1,17 +1,23 @@
-.main-container{
-    background-image: url(../P-Image/Rectangle\ 1.png);
-    background-size: cover;
-    background-position: center;
-    height:100vh;
-    width: 100wh;
-    overflow: hidden;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-}
+/* .main-container{
+    display: flex;
+   
+    
+} */
 
 .cads{
-    display: flex;
+     display: flex;
     margin-left:430px;
     margin-top: 200px;
+    position: fixed;
     
+}
+.info-part{
+    position: fixed;
+    max-height: 400px;
+    margin-top:200px;
+    margin-left: 40px;
+     color:aliceblue;
+    width:300px;
+    font-weight: bold;
+   
 }

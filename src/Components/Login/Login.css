@@ -1,0 +1,70 @@
+.Login-MainContainer{
+    background-color: white;
+}
+.Login-from{
+    padding: 30px;
+    margin-top:100px;
+    max-width: 400px;
+    margin-left: 40%;
+    border: 1px solid black;
+    border-radius:10px;
+}
+#check-Box{
+  
+}
+#login-div{
+    background-color:#f9a51a;
+    width:350px;
+    text-align: center;
+    border-radius:10px;
+    border: none;
+    height: 50px;
+  
+}
+#Login_OR{
+    display: flex;
+    justify-content: center;
+    /* margin-left: 40px; */
+    font-size: bold;
+}
+
+
+.social{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.Login_fb_google{
+    
+    max-width: 500px;
+    min-width: 400px;
+    display: flex;
+    align-items: center;
+    border: 1px solid #d3d3d3;
+    border-radius: 50px;
+    padding: 15px 20px;
+    margin: auto auto 15px;
+    cursor: pointer;
+    text-align: center;
+
+    /* display: flex;
+    align-items: center; */
+
+}
+.fa-facebook ,.fa-google{
+    
+    margin-right: 10px;
+}
+.Login_fb_google p{
+    margin-top:10px;
+}
+
+
+.create_Account span{
+     color: #f9a51a; 
+     cursor: pointer;
+}
+.create_Account{
+    margin-top:5px;
+}
